@@ -1,0 +1,31 @@
+import numpy as np
+import matplotlib.pyplot as plt
+   
+A = 5
+f = 5
+phase = 0
+t = np.linspace(0, 1,10000)
+
+y1 = A*np.sin(2*np.pi*f*t + phase)
+y2 = A*np.cos(2*np.pi*f*t + phase)
+
+
+plt.subplot(2,1,1)              
+plt.plot(t, y1)
+plt.grid()
+plt.tight_layout()
+plt.xlabel('time(sec)')
+plt.ylabel('Amplitude(Volts)')
+plt.title('Sinusoidal wave')
+
+
+plt.subplot(2,1,2)             
+plt.plot(t, y2)
+plt.grid()
+plt.tight_layout()
+plt.xlabel('time(sec)')
+plt.ylabel('Amplitude(Volts)')
+plt.title('Cosine wave')
+
+
+
