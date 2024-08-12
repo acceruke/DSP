@@ -1,0 +1,19 @@
+import numpy as np
+import matplotlib.pyplot as plt
+   
+A = 5
+f = 5
+phase = 0
+t = np.linspace(0, 1,10000)
+
+y = A*np.sin(2*np.pi*f*t + phase)
+
+
+plt.plot(t, y)
+plt.grid()
+plt.tight_layout()
+plt.xlabel('time(sec)')
+plt.ylabel('Amplitude(Volts)')
+plt.title('Sinusoidal wave')
+
+
