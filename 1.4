@@ -1,0 +1,26 @@
+import numpy as np
+import matplotlib.pyplot as plt
+   
+a1=2
+a2=-2
+t = np.linspace(0, 3,10000)
+
+y1 = np.exp(a1*t)
+y2 = np.exp(a2*t)
+
+plt.subplot(2,1,1)
+plt.plot(t, y1)
+plt.grid()
+plt.tight_layout()
+plt.xlabel('time(sec)')
+plt.ylabel('Amplitude(Volts)')
+plt.title('Exponential wave with a = 2')
+
+plt.subplot(2,1,2)
+plt.plot(t, y2)
+plt.grid()
+plt.tight_layout()
+plt.xlabel('time(sec)')
+plt.ylabel('Amplitude(Volts)')
+plt.title('Exponential wave with a = -2')
+
