@@ -1,0 +1,15 @@
+import numpy as np
+import matplotlib.pyplot as plt
+   
+lam = 6
+t = np.linspace(0, 3,10000)
+
+y = np.exp(-1*lam*t)
+
+
+plt.plot(t, y)
+plt.grid()
+plt.tight_layout()
+plt.xlabel('time(sec)')
+plt.ylabel('Number of radio-Active atoms')
+plt.title('Radio-Active decay with lambda = 6')
