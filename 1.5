@@ -1,0 +1,18 @@
+import numpy as np
+import matplotlib.pyplot as plt
+   
+iSat  = 10
+n=1.5
+vR = .025
+
+vD = np.linspace(0, 1,10000)
+
+iD = iSat*(np.exp(vD/(n*vR))-1)
+
+
+plt.plot(vD , iD)
+plt.grid()
+plt.tight_layout()
+plt.xlabel('Voltage')
+plt.ylabel('Current')
+plt.title('PN forward junction')
