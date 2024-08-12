@@ -1,0 +1,15 @@
+import numpy as np
+import matplotlib.pyplot as plt
+   
+a=2
+t = np.linspace(0, 3,10000)
+
+y = np.exp(-1j*a*t)
+
+
+plt.plot(t, y)
+plt.grid()
+plt.tight_layout()
+plt.xlabel('time(sec)')
+plt.ylabel('Amplitude')
+plt.title('Complex Exponential')
