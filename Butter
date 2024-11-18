@@ -1,0 +1,11 @@
+order=range(1,21,4)
+omega=np.logspace(-1,1.5,500)
+omega_c=1
+for N in order:
+    H=1/np.sqrt(1+(omega/omega_c)**(2*N))
+    plt.plot(omega,20*np.log10(H))
+   
+plt.xscale('log')
+plt.ylim(-60,5)
+plt.grid(True)
+plt.show()
